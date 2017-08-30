@@ -6,4 +6,5 @@
   :dependencies [[org.clojure/clojure "1.8.0"]]
   :main ^:skip-aot stopwatch.core
   :target-path "target/%s"
-  :profiles {:uberjar {:aot :all}})
+  :bin {:name "stopwatch" :bin-path "~/dotfiles/bin/"}
+  :profiles {:uberjar {:aot :all} :dev {:plugins [[lein-binplus "0.6.2"]]} })
